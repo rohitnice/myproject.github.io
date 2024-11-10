@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Books of the Month</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Google Fonts if needed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3e5d7; /* Light brown background */
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #5d4037; /* Dark brown header */
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d7ccc8;
+        }
+
+        /* Best Books Section */
+        .best-books {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Styling each individual book entry */
+        .book {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f1f3f5;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Book image styling */
+        .book img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .book img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Book information styling */
+        .book-info {
+            max-width: 600px;
+        }
+
+        .book-info h2 {
+            color: #5d4037; /* Dark brown for the book title */
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .book-info p {
+            color: #795548; /* Medium brown for the text */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Button styling inside each book description */
+        .book-info button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8d6e63; /* Medium brown button */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-info button:hover {
+            background-color: #6d4c41; /* Darker brown on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5d4037; /* Dark brown footer */
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #d7ccc8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Best Books of the Month</h1>
+        <p>Explore the best books that have made an impact this month, curated just for you.</p>
+    </header>
+
+    <!-- Best Books Section -->
+    <section class="best-books">
+        <div class="book">
+            <img src="images/dopaminedetox.jpg" alt="Best Book 1">
+            <div class="book-info">
+                <h2>Dopamine Detox</h2>
+                <p>Most simple yet advanced. Reminds me of the teachings of the Buddha Clear cut do's and don'ts with the effect in simple and basic sense. Loved it. Easy to read and lot to gain.</p>
+                
+            </div>
+        </div>
+        <div class="book">
+            <img src="images/idonloveuanymore.jpg" alt="Best Book 2">
+            <div class="book-info">
+                <h2>I Don't Love You Anymore</h2>
+                <p>Don't Love You Anymore" by Rithvik Singh Rathore is a poignant and thought-provoking novel that delves into the complexities of love, relationships, and the human heart. The author masterfully weaves a narrative that is both deeply personal and universally relatable. The story follows the protagonist as they navigate the turbulent waters of love, heartbreak, and self-discovery. With raw emotion and unflinching honesty, Rathore explores the darker corners of the human experience, laying bare the vulnerabilities and fears that we all try to hide. The writing is evocative and lyrical, with a keen attention to detail that brings the characters and their struggles to vivid life. </p>
+                
+            </div>
+        </div>
+        <div class="book">
+            <img src="images/sherlockholmes.jpg" alt="Best Book 3">
+            <div class="book-info">
+                <h2>The Complete Novels of Sherlock Holmes</h2>
+                <p>Embarking on the literary adventure that is "The Complete Sherlock Holmes," I found myself immersed in the genius of Sir Arthur Conan Doyle. Each story, from "A Study in Scarlet" to "The Case- Book of Sherlock Holmes," is a masterpiece in the art of deduction. Holmes, the iconic detective, is more than a logical mind; he's a cultural phenomenon. As I navigated foggy Victorian London with Holmes and Watson, I marveled at Doyle's ability to intertwine logic, science, and intuition into a captivating exploration of human nature. What makes this collection exceptional is its fusion of thrilling mysteries with profound insights. Beyond the brilliance of Holmes, the enduring friendship with Watson adds a touch of warmth to the cold world of deduction.</p>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Best Books of the Month. All rights reserved. | Follow us on <a href="#" style="color: #8d6e63; text-decoration: none;">Social Media</a></p>
+    </footer>
+</body>
+</html>

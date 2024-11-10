@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        /* Header Styling */
+        header {
+            background-color: #4B2D20;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        header h1 span {
+            color: #ddd;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+            transform: scale(1.1);
+        }
+
+        /* News Section Styling */
+        .news-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .news-item:hover {
+            transform: scale(1.02);
+        }
+
+        .news-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .news-headline {
+            font-size: 24px;
+            margin-top: 15px;
+            color: #4B2D20;
+        }
+
+        .news-content {
+            margin-top: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Books <span>News</span></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+<!-- News Section -->
+<section class="news-container">
+    <!-- News Article 1 -->
+    <a href="https://www.independent.co.uk/arts-entertainment/books/features/best-fiction-books-2024-rooney-ohagen-headshot-b2616300.html" target="_blank" class="news-link">
+        <div class="news-item">
+            <img src="images/th.jpg" alt="News Headline 1" class="news-image">
+            <h2 class="news-headline">Best fiction books of 2024: from Sally Rooney’s Intermezzo to Percival Everett’s James</h2>
+            <p class="news-content">Tt’s certainly been a good year so far for book lovers. 2024 has seen the much anticipated return of Sally Rooney, whose fourth novel Intermezzo is arguably her best effort to date, as well as new works from American...</p>
+        </div>
+    </a>
+
+    <!-- News Article 2 -->
+    <a href="https://www.msn.com/en-us/news/politics/books-like-the-handmaid-s-tale-and-1984-are-flying-off-the-shelves-after-the-presidential-election/ar-AA1tHlRc#fullscreen" target="_blank" class="news-link">
+        <div class="news-item">
+            <img src="images/mar.jpg" alt="News Headline 2" class="news-image">
+            <h2 class="news-headline">Books like ‘The Handmaid’s Tale’ and ‘1984’ are flying off the shelves after the presidential election</h2>
+            <p class="news-content">Margaret Atwood’s “The Handmaid’s Tale,” a novel set in a totalitarian society, has shot to the top of Amazon’s bestselling books list following Donald Trump’s reelection...</p>
+        </div>
+    </a>
+
+    <!-- News Article 3 -->
+    <a href="https://www.msn.com/en-us/tv/news/5-must-read-books-this-november-according-to-romance-novelist-ana-huang/ar-AA1tGb7D" target="_blank" class="news-link">
+        <div class="news-item">
+            <img src="images/hello.jpg" alt="News Headline 3" class="news-image">
+            <h2 class="news-headline">5 must-read books this November, according to romance novelist Ana Huang</h2>
+            <p class="news-content">TNeed some inspiration for your reading list? Ana Huang, a No. 1 New York Times bestselling author, stopped by the 3rd hour of TODAY this morning to share what she's been reading...</p>
+        </div>
+    </a>
+
+    <!-- News Article 4 -->
+    <a href="https://www.ft.com/content/e3878e7e-459b-43aa-a663-ef8e407012a3" target="_blank" class="news-link">
+        <div class="news-item">
+            <img src="images/yo.jpg" alt="News Headline 4" class="news-image">
+            <h2 class="news-headline">Children will read for pleasure if books are a source of joy</h2>
+            <p class="news-content">The writer is an author of fiction, cookery books and poetry anthologies. Her latest book is ‘The Dinner Table’, a collection of food writing...</p>
+        </div>
+    </a>
+
+    
+</section>
+
+</body>
+</html>

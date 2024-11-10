@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Books</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Google Fonts if needed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #561b1b;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #5d1917;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #ced4da;
+        }
+
+        /* Featured Books Section */
+        .featured-books {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Styling each individual book entry */
+        .book {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f1f3f5;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Book image styling */
+        .book img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .book img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Book information styling */
+        .book-info {
+            max-width: 600px;
+        }
+
+        .book-info h2 {
+            color: #343a40;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .book-info p {
+            color: #495057;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Button styling inside each book description */
+        .book-info button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-info button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #ced4da;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Discover Our Featured Books</h1>
+        <p>Get inspired by our top picks for the month, carefully curated just for you.</p>
+    </header>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books">
+        <div class="book">
+            <img src="images/nomansland.jpg" alt="Book 1">
+            <div class="book-info">
+                <h2>No Man’s Land</h2>
+                <p>A touching story of modernization, turmoil and
+                    sentiment, this book will take you through the
+                    journey of a family with ambitions, struggles and
+                    greed within the members all in the backdrop of
+                    Gurgaon's transformation. This is a comment on
+                    the indelibility and unchangeable nature of land
+                    and its people.
+                    </p>
+                
+            </div>
+        </div>
+        <div class="book">
+            <img src="images/thebookbinder.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>The Bookbinder of Jericho</h2>
+                <p>Beautiful novel about a bookbinding place at Oxford
+                    Written so realistically that the reader is practically
+                    there. Many details and interesting facts about the
+                    handling of papers folded into books, and a World
+                    War.</p>
+                
+            </div>
+        </div>
+        <div class="book">
+            <img src="images/girlsmurderguide.jpg" alt="Book 3">
+            <div class="book-info">
+                <h2>A good girl's guide to murder</h2>
+                <p>I liked this book very much its twists and turns and
+                    everything this whole book is a masterpiece</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Featured Books. All rights reserved. | Follow us on <a href="#" style="color: #007bff; text-decoration: none;">Social Media</a></p>
+    </footer>
+</body>
+</html>
+

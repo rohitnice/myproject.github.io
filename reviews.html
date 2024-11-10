@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e1b1; /* Light brown background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6f4f1f; /* Dark brown header */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .reviews h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .reviews-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Book Layout */
+        .book {
+            display: flex;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .book:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .book img {
+            width: 170px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .book-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-details h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .book-details p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6f4f1f;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Books <span>Reviews</span></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Latest Reviews</h2>
+        <div class="reviews-container">
+            <!-- Book 1 -->
+            <div class="book">
+                <img src="images/idonloveuanymore.jpg" alt="Book Title 1">
+                <div class="book-details">
+                    <h3>I Don't Love You Anymore</h3>
+                    <p>Don't Love You Anymore" by Rithvik Singh Rathore
+                        is a poignant and thought-provoking novel that
+                        delves into the complexities of love, relationships,
+                        and the human heart. The author masterfully
+                        weaves a narrative that is both deeply personal and
+                        universally relatable. The story follows the
+                        protagonist as they navigate the turbulent waters of
+                        love, heartbreak, and self-discovery. With raw
+                        emotion and unflinching honesty, Rathore explores
+                        the darker corners of the human experience, laying
+                        bare the vulnerabilities and fears that we all try to
+                        hide. The writing is evocative and lyrical, with a keen
+                        attention to detail that brings the characters and
+                        their struggles to vivid life. The author's use of
+                        language is simple yet powerful, making this a quick
+                        and immersive read. What sets this book apart is its
+                        unflinching willingness to confront the harsh realities
+                        of love and relationships. Rathore pulls no punches,
+                        and the result is a story that is both heartbreaking
+                        and ultimately uplifting. Overal, Don't Love You
+                        Anymore" isa must-read for anyone who has ever
+                        loved and lost. It is a testament to the human spirit's
+                        capacity for resilience and growth, and a reminder
+                        that even in the darkest moments, there is always
+                        hope.</p>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="images/nomansland.jpg" alt="Book Title 2">
+                <div class="book-details">
+                    <h3>No Man’s Land</h3>
+                    <p>TA touching story of modernization, turmoil and
+                        sentiment, this book will take you through the
+                        journey of a family with ambitions, struggles and
+                        greed within the members all in the backdrop of
+                        Gurgaon's transformation. This is a comment on
+                        the indelibility and unchangeable nature of land
+                        and its people.</p>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book">
+                <img src="images/girlsmurderguide.jpg" alt="Book Title 3">
+                <div class="book-details">
+                    <h3>A girl's guide to murder</h3>
+                    <p>Applause! Applause! Applause! This book offered one of the quickest and most exhilarating roller coaster experiences the moment I laid my hands on it. I’m still shaky, incoherent (I’ve even requested a translator to articulate my thoughts properly), my nails have seen better days, and I’m both confused and dizzy. But I’m also smiling and filled with happiness! I wholeheartedly give it a perfect five out of five mysterious shining stars!
+
+                        The storytelling is exceptional, the plot keeps you hooked, the character development is fantastic, the pacing is fast and heart-pounding, and the ending is immensely satisfying. What are you waiting for, folks? This book won’t just fall from the sky into your lap. Go ahead, buy it, and send me thank-you letters for my encouraging words!</p>
+                </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book">
+                <img src="images/thebookbinder.jpg" alt="Book Title 4">
+                <div class="book-details">
+                    <h3>The Bookbinder of Jericho</h3>
+                    <p>The Bookbinder isn’t exactly a sequel to The Dictionary of Lost Words, but it follows slightly in its footsteps. Peggy and Maude are twin sisters, but vastly different. Their now dead mother was a reader and encouraged Peggy’s curiosity. But Maude is slow and vulnerable, happy to fold paper into shapes. Both work for a book bindery of the Oxford University Press. Peggy steals the damaged works to take home to their narrowboat to read at night. She desires more from life, but feels obligated to look after Maude. She looks across at Somerville College, the women’s arm of Oxford University and imagines herself a “gown”, not a “town”.
+                        The book takes place during WWI. Belgians arrive in Oxford from Lavain, the site of a brutal German massacre. One of those refugees is Lotte, who comes to work at the bindery and helps Peggy realize that Maude is not as helpless as Peggy thinks. Peggy also befriends Bastiaan, an injured Belgian soldier who comes to Oxford to recuperate.</p>
+                </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="book">
+                <img src="images/justlisten.jpg" alt="Book Title 5">
+                <div class="book-details">
+                    <h3>Just Listen</h3>
+                    <p>As the name suggests so is the job it does. It brain
+                        washes your previous concept and how you are
+                        ignoring the most important art needed for
+                        survival and excel . Must read for everyone. Your
+                        relationship and communication will be next level.</p>
+                </div>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="book">
+                <img src="images/theartofstrategy.jpg" alt="Book Title 6">
+                <div class="book-details">
+                    <h3>The Art of Strategy</h3>
+                    <p>This book helped me in clarifying some of my
+                        thoughts on Strategy on day to day basis. It is must
+                        read for every professional. It helped me in
+                        understanding others point of view in negotiation.
+                        Something like if someone is saying X things then
+                        why he is saying so, underlying thoughts and
+                        motive etc.</p>
+                </div>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="book">
+                <img src="images/metamorphosis.jpg" alt="Book Title 7">
+                <div class="book-details">
+                    <h3>Metamorphosis</h3>
+                    <p>I just finished reading "The Metamorphosis," and I
+                        couldn't be happier with the book itself. Kafka's
+                        work is as thought-provoking as ever, and the
+                        edition I received is well-made, with clear text and
+                        a solid binding.
+                        The packing was decent-nothing extraordinary,
+                        but it did its job well enough. The book arrived
+                        without any damage, which is always a relief. (P.s:
+                        but i would always prefer books to be at least
+                        bubble wrapped because it's already paperback so
+                        the chances of damage gets higher.)</p>
+                </div>
+            </div>
+
+            <!-- Book 8 -->
+            <div class="book">
+                <img src="images/dopaminedetox.jpg" alt="Book Title 8">
+                <div class="book-details">
+                    <h3>Dopamine Detox</h3>
+                    <p>Most simple yet advanced. Reminds me of the
+                        teachings of the Buddha
+                        Clear cut do's and don'ts with the effect in simple
+                        and basic sense. Loved it. Easy to read and lot to
+                        gain.</p>
+                </div>
+            </div>
+
+            <!-- Book 9 -->
+            <div class="book">
+                <img src="images/sherlockholmes.jpg" alt="Book Title 9">
+                <div class="book-details">
+                    <h3>The Complete Novels of Sherlock Holmes</h3>
+                    <p>Embarking on the literary adventure that is "The
+                        Complete Sherlock Holmes," I found myself
+                        immersed in the genius of Sir Arthur Conan Doyle.
+                        Each story, from "A Study in Scarlet" to "The Case-
+                        Book of Sherlock Holmes," is a masterpiece in the art
+                        of deduction. Holmes, the iconic detective, is more
+                        than a logical mind; he's a cultural phenomenon. As I
+                        navigated foggy Victorian London with Holmes and
+                        Watson, I marveled at Doyle's ability to intertwine
+                        logic, science, and intuition into a captivating
+                        exploration of human nature. What makes this
+                        collection exceptional is its fusion of thrilling
+                        mysteries with profound insights. Beyond the
+                        brilliance of Holmes, the enduring friendship with
+                        Watson adds a touch of warmth to the cold world of
+                        deduction. In "The Complete Sherlock Holmes,"
+                        every detail matters, every puzzle piece reveals a
+                        greater narrative. Whether you're a mystery
+                        enthusiast or a literary explorer, these tales will grip
+                        you, challenge you, and leave you in awe of Doyle's
+                        storytelling. So, don the deerstalker, pick up the
+                        magnifying glass, and let "The Complete Sherlock
+                        Holmes" be your guide through a world where
+                        mysteries unfold in every shadow, and truth awaits in
+                        unexpected places.</p>
+                </div>
+            </div>
+
+            <!-- Book 10 -->
+            <div class="book">
+                <img src="images/maybenexttime.jpg" alt="Book Title 10">
+                <div class="book-details">
+                    <h3>Maybe Next Time</h3>
+                    <p>Oh wow !!. The tears I've cried reading this book !!. I
+                        haven't cried for a long time whilst reading a story,so
+                        it just goes to show how well Cesca wrote this one.
+                        The premise is that Emma, is a literary agent who
+                        can't say no to outside commitments, so she spends
+                        all her time trying to make sure she's doing all she
+                        should. The trouble is, she's been neglecting her
+                        family really badly. Today is the date that her and
+                        her husband Dan write letters to each other and
+                        celebrate another year together. They reminisce
+                        about past events that have been funny or romantic.
+                        They celebrate their love Another year goes around
+                        and it's now that important date. She's forgotten to
+                        write a letter because she forgot what date it is.
+                        She's even forgotten to acknowledge the date to
+                        Dan !. She's been so wrapped up in her work life and
+                        outside commitments. The commitments that she
+                        swore blind she would finish with and spend more
+                        time with her family. Dan is not happy. Then
+                        something awful.happens that turns her world
+                        upside down. She has to relive the same day over
+                        and over .... Can she change the outcome and make
+                        life better again ?...... Oh I think Cesca Major may be
+                        my new favourite author !!. I do loved this story !. I will
+                        be thinking about this one for quite some time !,
+                        while telling all my friends to buy the book too !!!.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Book Reviews. All rights reserved.</p>
+    </footer>
+</body>
+</html>

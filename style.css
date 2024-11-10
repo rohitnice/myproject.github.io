@@ -1,0 +1,293 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #D2B48C;  /* Light brown color */
+}
+
+/* Header */
+header {
+    background-color: #4B2D20;  /* Dark brown color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+header h1 span {
+    color: #ddd;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+    transform: scale(1.1);  /* Slightly scale up */
+}
+
+/* Featured Book Section */
+.featured-book {
+    display: flex;
+    margin: 40px 20px;
+    max-width: 100%; /* Full width of the container */
+    height: 300px; /* Set a fixed height to limit the section */
+    background-color: #f6f1e4; /* Light tan background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.featured-info {
+    background-color: #4b3621; /* Dark brown background color */
+    color: #ffffff;
+    padding: 40px;
+    width: 50%; /* Take 50% of the container width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.featured-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.featured-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d1c7b5; /* Light beige for readability */
+}
+
+.featured-book img {
+    width: 50%; /* Take 50% of the container width */
+    height: 100%; /* Ensure the image fills the height of the container */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 0; /* Remove border radius from the image */
+    transition: transform 0.3s ease;
+}
+
+.featured-book:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.category {
+    flex: 1;
+    margin: 10px;
+    padding: 30px 20px;
+    color: #fff;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);  /* Enhanced shadow for more emphasis */
+}
+
+.category h3 {
+    font-family: "Agency FB", Arial, sans-serif;
+    font-size: 28px; /* Larger font size for headlines */
+    margin-bottom: 15px;
+    letter-spacing: 1px; /* Adds a bit of spacing for style */
+    text-align: left;  /* Align heading to the left */
+    font-weight: bold;
+}
+
+.category p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.category button {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category button:hover {
+    background-color: #eee;
+    color: #333;
+    transform: scale(1.1); /* Slightly scale up */
+}
+
+/* Books and Reviews List Section */
+.books-list, .reviews {
+    margin: 20px;
+}
+
+.books-list h2, .reviews h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.books-list ul, .reviews ul {
+    list-style-type: none;
+}
+
+.books-list li, .reviews li {
+    margin-bottom: 20px;
+}
+
+.books-list h3, .reviews h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Extra Sections */
+.extra {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    background-color: #571d04; /* Dark brown color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.extra div {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f7f6f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.extra div:hover {
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.extra h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.extra p {
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Adjusted styling for images in the latest and popular books sections */
+.latest-book-item img,
+.popular-book-item img {
+    max-width: 300px;  /* Increase the maximum width */
+    max-height: 400px; /* Increase the maximum height */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+.popular-book-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popular-book-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust size */
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.popular-book-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.popular-book-item a {
+    font-weight: bold;
+    color: #FF3F3F;
+    text-decoration: none;
+}
+
+.popular-book-item a:hover {
+    text-decoration: underline;
+}

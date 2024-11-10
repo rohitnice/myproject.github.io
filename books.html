@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        /* Basic reset and styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e1b1; /* Light brown background */
+        }
+
+        header {
+            background-color: #6f4f1f; /* Dark brown header */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #6f4f1f; /* Dark brown footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Styling the books list */
+        .books-list {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .book-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .book-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .books-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .books-grid {
+                grid-template-columns: 1fr; /* 1 column on mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Books <span>Reviews</span></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="books-list">
+        <h2>Books Collection</h2>
+        <div class="books-grid">
+            <div class="book-item">
+                <img src="images/thebookbinder.jpg" alt="The Bookbinder of Jericho">
+                <h3>The Bookbinder of Jericho</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/idonloveuanymore.jpg" alt="I Don't Love You Anymore">
+                <h3>I Don't Love You Anymore</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/itendswithus.jpg" alt="It ends with us">
+                <h3>It ends with us</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/donbelieveeverythingyouthink.jpg" alt="Don't Believe Everything You Think">
+                <h3>Don't Believe Everything You Think</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/thepowerofyourmind.jpg" alt="The Power of Your Subconscious Mind">
+                <h3>The Power of Your Subconscious Mind</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/atomichabits.jpg" alt="Atomic Habits">
+                <h3>tomic Habits</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/maybenexttime.jpg" alt="Maybe Next Time">
+                <h3>Maybe Next Time</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/sherlockholmes.jpg" alt="The Complete Novels of Sherlock Holmes">
+                <h3>The Complete Novels of Sherlock Holmes</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/girlsmurderguide.jpg" alt="A good Girl's guide to murder">
+                <h3>A good Girl's guide to murder</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/nomansland.jpg" alt="No Man’s Land">
+                <h3>No Man’s Land</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/dopaminedetox.jpg" alt="Dopamine Detox">
+                <h3>Dopamine Detox</h3>
+                
+            </div>
+            <div class="book-item">
+                <img src="images/metamorphosis.jpg" alt="Metamorphosis">
+                <h3>Metamorphosis</h3>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Reviews. All rights reserved.</p>
+    </footer>
+</body>
+</html>
